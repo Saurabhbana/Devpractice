@@ -1,0 +1,16 @@
+version: '3'
+services:
+  webserver:
+    image: saurabhbana/devpractice:v1
+    ports:
+      -8081:8080
+  appserver:
+    image: httpd
+    port:
+      -80:80
+  dbserver:
+    image: mysql
+    ports:
+      -3306:3306
+    environment:
+      - MYSQL_ROOT_PASSWORD=admin123
