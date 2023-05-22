@@ -6,7 +6,7 @@ services:
       -8081:8080
   appserver:
     image: httpd
-    port:
+    ports:
       -80:80
   dbserver:
     image: mysql
